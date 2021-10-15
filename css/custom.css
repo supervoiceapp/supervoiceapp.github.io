@@ -45,6 +45,20 @@ a:active {
 }
 
 
+		.Fb {
+		    display: table;
+		    table-layout: fixed;
+		    width: 90%;
+		    padding: 0 5%;
+		    background: #004567;
+		    color: white;
+		    border-top: solid 6px #337190;
+		    margin-top: -2em;
+		}
+		.Gb {
+    display: table-cell;
+    text-align: center;
+		}
 
 			.boxed {
 				padding: 0.5em 2em 2em 2em;
@@ -113,13 +127,22 @@ a:active {
 			}
 
 			h3 {
-				text-align: center;
-				font-family: Montserrat,sans-serif;
-				font-weight: bold;
-				font-size: 16pt;
-				color: #3399ff;
-				padding-bottom: 13px;
-			}
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 
 			.scale_img {
 				width:100%;
