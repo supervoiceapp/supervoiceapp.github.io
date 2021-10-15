@@ -40,7 +40,7 @@ a:active {
 
 .centered{
 	margin: auto;
-	max-width: 1800px;
+	max-width: 3200px;
 	text-align:left;
 }
 
@@ -69,13 +69,13 @@ a:active {
 				justify-content: center;
 			}
 			.section {
-				width: 900px;
+				width: 1800px;
 				max-width: 100%;
 				text-align: center;
 
 			}
 			.language {
-				width: 900px;
+				width: 1800px;
 				max-width: 100%;
 				text-align: right;
 
@@ -150,7 +150,7 @@ a:active {
 					width: 1em;
 					margin-left: -1.3em;
 
-  					font-size: 1.5em;
+  					font-size: 1.8em;
 
  				 	padding-right: 1.1225em;
 					margin-top: 13px;
@@ -164,7 +164,7 @@ a:active {
 			p, ul {
 				text-align: justify;
 				font-family: Montserrat,sans-serif;
-				font-size: 18px;
+				font-size: 20px;
 				line-height: 1.5em;
 				color: #474747;
 			}
