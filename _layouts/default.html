@@ -28,18 +28,15 @@
 		<div class = "global_container">
 			<div class = "section"  >
 
-				<h1>SurfingAttack: Interactive Hidden Attack on Voice Assistants Using Ultrasonic Guided Wave</h1>
+				<h1>SUPERVOICE: Text-Independent Speaker Verification Using Ultrasound Energy in Human Speech</h1>
 				<div class ="boxed">
-					<p> SurfingAttack exploits ultrasonic guided wave propagating through solid-material tables to attack voice control systems.
-						By leveraging the unique properties of acoustic transmission in solid materials, we design a new attack called
-						SurfingAttack that would enable multiple rounds of interactions between the voice-controlled device and the attacker
-						over a longer distance and without the need to be in line-of-sight. By completing the interaction loop of inaudible sound attack,
-						SurfingAttack enables new attack scenarios, such as hijacking a mobile Short Message Service (SMS) passcode, making ghost fraud calls
-						without owners' knowledge, etc.
+					<p> SUPERVOICE is a text-Independent speaker verification system which ultilizes ultrasound in human speech. It can be adapted to any Deep Neural Network based speaker identification model.
+						With integrating the ultrasound of genuine, SUPERVOICE is capable to differentiate between genuine human and machine based replay attacks, or other adversarial attacks that induced by machine.
+					  This website demonstrates the dataset that we used to evaluate SUPERVOICE.
 					</p>
-					<p style="font-size:20px"><a href="papers/NDSS-surfingattack.pdf">Read the Paper</a>,
+					<!-- <p style="font-size:20px"><a href="papers/NDSS-surfingattack.pdf">Read the Paper</a>, -->
 
-					<a href="#bibtex" data-toggle="collapse" role="button">
+					<!-- <a href="#bibtex" data-toggle="collapse" role="button">
 					Cite <i class="fa fa-quote-right" aria-hidden="true"></i></a>
 						<div id="bibtex" style="margin-top: 1.5em;" class="collapse" align="left">
 							<pre style="white-space: pre">
@@ -50,10 +47,10 @@
     year = {2020},
 }
 </pre></p></div>
-				</div>
+				</div> -->
 
 
-				<h1> Team </h1>
+				<!-- <h1> Team </h1>
 					<div class ="boxed" style="margin-top=3em;">
 						<p>
 							SurfingAttack was discovered by the following team of academic researchers:
@@ -67,9 +64,9 @@
 							<li><a href="https://engineering.wustl.edu/Profiles/Pages/Ning-Zhang.aspx"><strong>Ning Zhang</strong></a> at <a href="https://cse.wustl.edu/Pages/default.aspx">Washington University in St. Louis</a></li>
 
 						</ul>
-<p class="text-center"><strong>Contact us at <a href="mailto:surfingattack@gmail.com">surfingattack@gmail.com</a></strong></p>
+<p class="text-center"><strong>Contact us at <a href="mailto:surfingattack@gmail.com">surfingattack@gmail.com</a></strong></p> -->
 
- <div class="text-center mt-auto" style="width:100%;margin-top: 1.5em; margin-bottom: 1.5em; display:flex;justify-content:space-around;align-items:center; flex-wrap: wrap;">
+ <!-- <div class="text-center mt-auto" style="width:120%;margin-top: 1.5em; margin-bottom: 1.5em; display:flex;justify-content:space-around;align-items:center; flex-wrap: wrap;">
       <div>
       <a href="https://www.cse.msu.edu/">
         <img width = "160px" src="logos/MSU-logo.png" alt="Michigan State University logo" class="img-fluid" />
@@ -83,10 +80,10 @@
         <img width="160px" src="logos/WUSTL.png" alt="WUSTL logo" class="img-fluid" />
 			</a>
  </div>
-</div>
+</div> -->
 
 
-				<h1>Features</h1>
+				<h1>Voice-1</h1>
 
 					<ul>
 						<li class="question">
@@ -101,17 +98,44 @@
 							<br>
 							<br>
 							<br>-->
-							<b> How does SurfingAttack work?</b>
+							<b> Dataset Size</b>
 
 								<p class="answer">
-									SurfingAttack modulates the voice command onto inaudible frequency band, and transmits attack signals using
-									an off-the-shelf PZT transducer (cost $5 per piece) through different types of tables made of solid materials.
-												</p>
-					<b>What devices can be compromised by the commands injected via SurfingAttack?</b>
+									78 person, 7800 audio samples, 100 audios/person
+								</p>
+					<b>Dataset Design</b>
 					<p class="answer">
-									We validated successful SurfingAttack on the following devices, and we believe more devices could be vulnerable. The phones protected by silicone rubber phone cases are also vulnerable.
-												</p>
+					There are 4 types of sentences included by the dataset.
+					</p>
+					<li class="answer">  &#9733 <strong>Common:</strong>   The common type contains 5 sentences,
+two of which are from the dialect set of TIMIT dataset [1],
+while the other three sentences are “This is a test", “Please
+identify me", and “OK, please recognize my voice". For this
+type of sentence, each participant will speak every sentence
+twice, resulting in 10 recordings.
+</li>
+					<li class="answer">  &#9733 <strong>Compact:</strong>  The compact type has 200 sentences in
+total. They are randomly chosen from the TIMIT dataset, and
+designed to provide a good coverage of phonemes, with extra
+occurrences of phonetic contexts that are considered either
+difficult or of particular interest. Each participant reads 40
+sentences from this type.
+</li>
+					<li class="answer">  &#9733 <strong>Compact:</strong> PThe fricative commands are col-
+lected from the website ok-google.io, which provides com-
+monly used commands on Google Assistant. We select 50
+sentences that have fricative phonemes, e.g., “find my phone",
+“turn on my lights". Each speaker randomly picks 25 sentences
+from this type of commands.
+ </li>
+					<li class="answer"> &#9733 <strong>Non-fricative:</strong> Similar to the fricative com-
+mands, the non-fricative commands are also collected from
+ok-google.io, which do not contain any fricative phonemes.
+We randomly pick 25 sentences and ask every participant read
+25 sentences from this type</li>
 
+				<b>Sentences</b>
+					<p style="font-size:20px"><a href="sentences/sentences.zip">CHECK HERE</a>
 					<table>
   				<tr>
     			  <th>Manufacturer</th>
