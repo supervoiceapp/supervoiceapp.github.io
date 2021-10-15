@@ -69,13 +69,13 @@ a:active {
 				justify-content: center;
 			}
 			.section {
-				width: 1800px;
+				width: 1600px;
 				max-width: 100%;
 				text-align: center;
 
 			}
 			.language {
-				width: 1800px;
+				width: 1600px;
 				max-width: 100%;
 				text-align: right;
 
@@ -94,10 +94,10 @@ a:active {
 				text-align: center;
 			}
 			h2 {
-				text-align: center;
+				text-align: left;
 				font-family: Montserrat,sans-serif;
 				font-weight: bold;
-				font-size: 21pt;
+				font-size: 24pt;
 				color: #3399ff;
 				padding-bottom: 13px;
 			}
