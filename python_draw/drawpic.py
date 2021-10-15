@@ -47,7 +47,7 @@ if __name__ == '__main__':
             shadow=True, startangle=0)
     ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
     plt.title("Ages")
-    plt.savefig("gender.png", dpi=None, facecolor='w', edgecolor='w',
+    plt.savefig("age.png", dpi=None, facecolor='w', edgecolor='w',
                 orientation='portrait', papertype=None, format=None,
                 transparent=False, bbox_inches=None, pad_inches=0.2,
                 frameon=None, metadata=None)
