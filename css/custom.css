@@ -48,12 +48,12 @@ a:active {
 		.Fb {
 		    display: table;
 		    table-layout: fixed;
-		    width: 90%;
+		    width: 100%;
 		    padding: 0 5%;
-		    background: #004567;
+		    background: #6666FF;
 		    color: white;
-		    border-top: solid 6px #337190;
-		    margin-top: -2em;
+		    border-top: solid 2px #6666FF;
+		    margin-top: 0em;
 		}
 		.Gb {
     display: table-cell;
@@ -128,7 +128,7 @@ a:active {
 
 			h3 {
     display: block;
-    font-size: 1.17em;
+    font-size: 22pt;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
