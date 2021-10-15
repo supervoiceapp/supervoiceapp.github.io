@@ -81,7 +81,7 @@ a:active {
 
 			}
 
-			h1 {
+			h0 {
 				text-align: center;
 				font-family: Montserrat,sans-serif;
 				font-weight: bold;
@@ -90,6 +90,16 @@ a:active {
 				padding-bottom: 13px;
 				padding-top: 5px;
 			}
+			h1 {
+				text-align: left;
+				font-family: Montserrat,sans-serif;
+				font-weight: bold;
+				font-size: 30pt;
+				color: #1dbb9c;
+				padding-bottom: 13px;
+				padding-top: 5px;
+			}
+
 			.imgh {
 				text-align: center;
 			}
