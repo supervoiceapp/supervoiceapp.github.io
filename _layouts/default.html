@@ -13,7 +13,7 @@
 </script>
 	<meta charset=“UTF-8”>
 
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,bold,900,600">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		  <!-- Custom styles for this template -->
@@ -30,9 +30,8 @@
 
 				<h0>SUPERVOICE: Text-Independent Speaker Verification Using Ultrasound Energy in Human Speech</h0>
 				<div class ="boxed">
-					<p> SUPERVOICE is a text-Independent speaker verification system which ultilizes ultrasound in human speech. It can be adapted to any Deep Neural Network based speaker identification model.
-						With integrating the ultrasound of genuine, SUPERVOICE is capable to differentiate between genuine human and machine based replay attacks, or other adversarial attacks that induced by machine.
-					  This website demonstrates the dataset that we used to evaluate SUPERVOICE.
+					<p> SUPERVOICE is a text-Independent speaker verification system which ultilizes ultrasound in human speech. It can be integrated with any Deep Neural Network based speaker identification model. SUPERVOICE is highly accurate in the speaker recognition task, outperforming all existing speaker verification models. SUPERVOICE is also capable of differentiating between the speech from genuine human and replay audios from attackers. With SUPERVOICE, we are exploring a new direction of human voice research by scrutinizing the unique characteristics of human speech at the ultrasound frequency band. When considering human speech production, our research indicates that the high-frequency ultrasound components (e.g. speech fricatives) from 20 to 48 kHz can significantly enhance the security and accuracy of speaker verification. SUPERVOICE could significantly enhance the existing speaker verification systems.
+					  This website shows the dataset we used to evaluate SUPERVOICE.
 					</p>
 					<!-- <p style="font-size:20px"><a href="papers/NDSS-surfingattack.pdf">Read the Paper</a>, -->
 
@@ -83,7 +82,7 @@
 </div>
 
 
-				<h1>Voice-1</h1>
+				<!--<h1>Voice-1</h1>-->
 
 					<ul>
 						<li class="question">
@@ -92,8 +91,15 @@
 						<li class="question">
 							<h2> Why we collect this dataset?</h2>
 							<p class="answer">
-							No existing datasets support audio samples as 48kHz or 192kHz.
+							SUPERVOICE dataset (Voice-1 and Voice-2) is the first voice dataset with voice data collected by recorders with a high-frequency sampling rate as highly as 48kHz and 192kHz.
 							</p>
+
+							<h2> What is inside the dataset?</h2>
+							<p class="answer">
+							Voice-1 is collected by Avisoft condenser microphone CM16, which includes the voice data from 78 volunteers, totalling 7,800 utterances using 192 kHz sampling rate. Among the 78 volunteers, most of them are college students with ages ranging from 18 to 56, including 38 males and 40 females. Voice-2 is constructed by recording 25 sentences by 50 participants with different models of smartphones, which includes 1,250 utterances with 48 kHz sampling rate. <br><br>
+							The table below shows a comparison with other high-profile datasets.
+							</p>
+
 							<img width = "1400px" src="pic/compare.png" alt="comparison" class="img-fluid" /><br>
 							<h2> Dataset Size</h2>
 							<p class="answer">
@@ -103,32 +109,13 @@
 					<p class="answer">
 					There are 4 types of sentences included by the dataset.
 					</p>
-					<li class="answer">  &#9733<strong>Common:</strong>The common type contains 5 sentences,
-two of which are from the dialect set of TIMIT dataset [1],
-while the other three sentences are “This is a test", “Please
-identify me", and “OK, please recognize my voice". For this
-type of sentence, each participant will speak every sentence
-twice, resulting in 10 recordings.
+					<li class="answer">  &#9733<strong>Common:</strong>The common type contains 5 sentences, two of which are from the dialect set of TIMIT dataset, while the other three sentences are “This is a test", “Please identify me", and “OK, please recognize my voice". For this type of sentence, each participant will speak every sentence twice, resulting in 10 recordings.
 </li>
-					<li class="answer">  &#9733<strong>Compact:</strong>The compact type has 200 sentences in
-total. They are randomly chosen from the TIMIT dataset, and
-designed to provide a good coverage of phonemes, with extra
-occurrences of phonetic contexts that are considered either
-difficult or of particular interest. Each participant reads 40
-sentences from this type.
+					<li class="answer">  &#9733<strong>Compact:</strong>The compact type has 200 sentences in total. They are randomly chosen from the TIMIT dataset, and designed to provide a good coverage of phonemes, with extra occurrences of phonetic contexts that are considered either difficult or of particular interest. Each participant reads 40 sentences from this type.
 </li>
-					<li class="answer">  &#9733<strong>Fricative:</strong>The fricative commands are col-
-lected from the website ok-google.io, which provides com-
-monly used commands on Google Assistant. We select 50
-sentences that have fricative phonemes, e.g., “find my phone",
-“turn on my lights". Each speaker randomly picks 25 sentences
-from this type of commands.
+					<li class="answer">  &#9733<strong>Fricative:</strong>The fricative commands are collected from the website ok-google.io, which provides commonly used commands on Google Assistant. We select 50 sentences that have fricative phonemes, e.g., “find my phone", “turn on my lights". Each speaker randomly picks 25 sentences from this type of commands.
  </li>
-					<li class="answer"> &#9733<strong>Non-fricative:</strong>Similar to the fricative com-
-mands, the non-fricative commands are also collected from
-ok-google.io, which do not contain any fricative phonemes.
-We randomly pick 25 sentences and ask every participant read
-25 sentences from this type</li>
+					<li class="answer"> &#9733<strong>Non-fricative:</strong>Similar to the fricative commands, the non-fricative commands are also collected from ok-google.io, which do not contain any fricative phonemes. We randomly pick 25 sentences and ask every participant read 25 sentences from this type</li>
 
 				<h2>Sentences</h2>
 					<p style="font-size:20px"><a href="sentences/full_sentences.pdf">CHECK HERE</a><br>
